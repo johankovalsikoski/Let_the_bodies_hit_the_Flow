@@ -1,4 +1,4 @@
-package johan.kovalsikoski.letthebodieshittheflow.data.ui.home
+package johan.kovalsikoski.letthebodieshittheflow.ui.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
 import johan.kovalsikoski.letthebodieshittheflow.R
 import johan.kovalsikoski.letthebodieshittheflow.data.model.Person
-import johan.kovalsikoski.letthebodieshittheflow.data.ui.home.adapter.PersonItem
+import johan.kovalsikoski.letthebodieshittheflow.ui.home.adapter.PersonItem
 import kotlinx.android.synthetic.main.activity_home.*
 
 

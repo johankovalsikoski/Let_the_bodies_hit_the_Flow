@@ -1,4 +1,4 @@
-package johan.kovalsikoski.letthebodieshittheflow.data.ui.home.adapter
+package johan.kovalsikoski.letthebodieshittheflow.ui.home.adapter
 
 import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
 import com.xwray.groupie.kotlinandroidextensions.Item

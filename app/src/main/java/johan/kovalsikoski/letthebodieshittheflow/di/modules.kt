@@ -1,12 +1,15 @@
 package johan.kovalsikoski.letthebodieshittheflow.di
 
+import johan.kovalsikoski.letthebodieshittheflow.data.repository.people.PeopleRepository
+import johan.kovalsikoski.letthebodieshittheflow.data.repository.people.PeopleRepositoryImpl
 import johan.kovalsikoski.letthebodieshittheflow.service.RetrofitImpl
+import johan.kovalsikoski.letthebodieshittheflow.service.ServiceImpl
 import johan.kovalsikoski.letthebodieshittheflow.viewModel.HomeViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val homeModule = module {
-    viewModel { HomeViewModel() }
+    viewModel { HomeViewModel(get()) }
 }
 
 val retrofitModule = module {
@@ -15,6 +18,10 @@ val retrofitModule = module {
 }
 
 val peopleServiceModule = module {
-    factory { RetrofitImpl.providePeopleService(get()) }
+    factory { ServiceImpl.providePeopleService(get()) }
+}
+
+val peopleRepositoryModule = module {
+    factory<PeopleRepository> { PeopleRepositoryImpl(get()) }
 }
 

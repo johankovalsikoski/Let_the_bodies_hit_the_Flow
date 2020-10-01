@@ -63,5 +63,9 @@ dependencies {
     // OkHttp Logging Interceptor
     implementation "com.squareup.okhttp3:logging-interceptor:$okHttp_version"
 
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
 
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
 }

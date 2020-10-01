@@ -27,7 +27,6 @@ class RetrofitImpl {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 
-        fun providePeopleService(retrofit: Retrofit): PeopleService =
-            retrofit.create(PeopleService::class.java)
+
     }
 }

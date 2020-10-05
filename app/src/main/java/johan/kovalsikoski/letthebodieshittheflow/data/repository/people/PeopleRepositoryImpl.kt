@@ -8,11 +8,6 @@ import kotlinx.coroutines.flow.flow
 class PeopleRepositoryImpl(private val peopleService: PeopleService) : PeopleRepository {
 
     override fun getPeople(page: Int): Flow<Person> = flow {
-//        peopleService.getPeople(page = page).map { peopleResponse ->
-//            peopleResponse.results.forEach { person ->
-//                emit(person)
-//            }
-//        }
         peopleService.getPeople(page).body()?.results?.forEach { person ->
             emit(person)
         }
